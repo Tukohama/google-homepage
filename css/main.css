@@ -1,0 +1,53 @@
+.wrapper {
+    width: 100%;
+    min-height: 500px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    ". . ."
+    ". content ."
+    ". . .";
+}
+
+.center-content {
+    grid-area: content;
+    display: flex;
+    flex-direction: column;
+}
+
+.google-logo {
+    object-fit: contain;
+    margin-bottom: 25px;
+}
+
+.search-box {
+    margin-bottom: 25px;
+    height: 35px;
+    border-radius: 20px;
+    border: 2px solid rgb(202, 201, 200);
+    background-image: url("https://www.w3schools.com/css/searchicon.png");
+    background-repeat: no-repeat;
+    background-position: 10px 10px;
+    padding-left: 40px;
+}
+
+.button-container {
+    align-self: center;
+}
+
+.search-button1 {
+    width: 1fr;
+    height: 40px;
+    font-size: 15px;
+    white-space: nowrap;
+    color:gray;
+}
+
+.search-button2 {
+    width: 1fr;
+    height: 40px;
+    font-size: 15px;
+    white-space: nowrap;
+    color: gray;
+}
